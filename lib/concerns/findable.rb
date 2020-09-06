@@ -4,6 +4,7 @@ module Concerns::Findable
    
  def find_by_name(name) 
     all.find do |x|
+      binding.pry 
  if x.name == name 
        x
    end 
