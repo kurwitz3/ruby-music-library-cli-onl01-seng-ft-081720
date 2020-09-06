@@ -69,7 +69,7 @@ def play_song
   song = gets.chomp.to_i
   if (1..Song.all.length).include?(song)
     list = Song.all.sort_by(&:name)[song - 1]
-  puts "PLaying #{number.name} by #{number.artist.name}"
+  puts "PLaying #{list.name} by #{list.artist.name}"
 end 
 end
 
