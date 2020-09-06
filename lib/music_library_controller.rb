@@ -59,7 +59,7 @@ end
     
     if  genre = Genre.find_by_name(x)
      genre.songs.sort_by(&:name).each.with_index(1) do |z,x|
-      puts "#{x}. #{z.artist} - #{z.name}"
+      puts "#{x}. #{z.artist.name} - #{z.name}"
    end 
  end
 end
