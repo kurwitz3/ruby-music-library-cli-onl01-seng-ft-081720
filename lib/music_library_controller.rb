@@ -52,6 +52,10 @@ end
       puts "#{x}. #{z.name} - #{z.genre.name}"
   end 
 end
+
+
+
+
 end
 
 
