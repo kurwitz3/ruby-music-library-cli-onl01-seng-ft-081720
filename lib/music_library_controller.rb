@@ -33,7 +33,7 @@ end
    Song.all.sort_by(&:name.each.with_index(1) do |x,z|
     binding.pry 
     # puts "#{z}. #{x.artist.name}"
-   # end
+   end
    end 
   def list_genres
       Genre.all.sort_by(&:name).each.with_index(1) do |x,z| 
