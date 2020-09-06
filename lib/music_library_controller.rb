@@ -45,13 +45,13 @@ end
    puts "Please enter the name of an artist:"
      x = gets.chomp
     if  artist = Artist.find_by_name(x)
-      artist.songs.sort_by(&:name).each.with_index so |z,x|
+      artist.songs.sort_by(&:name).each.with_index do |z,x|
       puts "#{x}. #{song.name} - #{song.genre.name}"
 
  end
   end 
 end
-end
+
 
 
 
