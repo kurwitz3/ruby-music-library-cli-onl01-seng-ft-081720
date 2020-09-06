@@ -68,7 +68,8 @@ def play_song
  puts "Which song number would you like to play?"
   song = gets.chomp.to_i
   binding.pry 
-  if list_songs.include?(song)
+  if Song.all.length.include?(song)
+    list = Song.all.sort_by(&:name)[list]
   puts "PLaying #{number.name} by #{number.artist.name}"
 end 
 end
