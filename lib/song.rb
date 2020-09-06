@@ -46,15 +46,17 @@ def self.create(name)
 end 
 
  def self.find_by_name(namez) 
- @@all.find do |x|
- if x.name == namez 
+   @@all.find do |x|
+    if x.name == namez 
        x
    end 
  end
- end
+end
+   
    def self.find_or_create_by_name(name)
      find_by_name(name) || create(name)
    end
+   
    def self.new_from_filename(name)
     artist,song,genre = name.split(" - ")
     x = genre.gsub('.mp3','')
@@ -64,9 +66,7 @@ end
     new(song,artist,genre)
   end
   
-  def self.create_from_filename(name)
+def self.create_from_filename(name)
    self.new_from_filename(name)
-    end
-    
-
+  end
 end
