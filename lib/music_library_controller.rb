@@ -68,6 +68,7 @@ def play_song
  puts "Which song number would you like to play?"
   song = gets.chomp.to_i
   number = Song.all[song]
+  puts "PLaying #{number} by #{number.artist}"
 end 
 
 
