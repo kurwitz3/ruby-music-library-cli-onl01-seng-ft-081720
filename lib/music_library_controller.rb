@@ -70,6 +70,7 @@ def play_song
   if list_songs.incude?(song)
   puts "PLaying #{number.name} by #{number.artist.name}"
 end 
+end
 
 
 
