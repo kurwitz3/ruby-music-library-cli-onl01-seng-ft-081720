@@ -48,7 +48,7 @@ end
     
     if  artist = Artist.find_by_name(x)
      artist.songs.sort_by(&:name).each.with_index(1) do |z,x|
-       binding.pry 
+      
       puts "#{x}. #{songs.name} - #{songs.genre.name}"
   end 
 end
