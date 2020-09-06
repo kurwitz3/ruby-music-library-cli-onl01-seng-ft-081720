@@ -4,7 +4,6 @@ class Artist
   extend Concerns::Findable 
   
   attr_accessor :name,:song, :songs
-  attr_reader
   @@all = [] 
   
   def initialize(name)
@@ -16,6 +15,7 @@ class Artist
   def self.all 
     @@all 
   end 
+  
   def self.destroy_all 
     @@all.clear 
   end 
@@ -26,7 +26,6 @@ class Artist
   
   def self.create(name)
     self.new(name)
-    
   end
   
   
@@ -43,8 +42,7 @@ def genres
     if x.artist == self 
      new << x.genre
     end
-  end
- new.uniq
+   end
+  new.uniq
  end
-
 end 
