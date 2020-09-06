@@ -76,7 +76,6 @@ end
 
 
 
-def self.list_songs
-end
+self.list_songs
 
 end 
