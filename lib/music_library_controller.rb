@@ -46,7 +46,7 @@ end
      x = gets.chomp
     if  artist = Artist.find_by_name(x)
       artist.songs.sort_by(&:name).each.with_index so |z,x|
-      puts "#{x}. #{song.name}  "
+      puts "#{x}. #{song.name} - #{song.genre.name}"
 
  end
   end 
