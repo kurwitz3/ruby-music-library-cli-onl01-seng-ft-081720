@@ -22,19 +22,20 @@ class MusicLibraryController
     puts "What would you like to do?"
     answer = gets.chomp
    end
-  
-end
+ end
+ 
  def list_songs 
    Song.all.sort_by(&:name).each.with_index(1) do |x,z| 
    puts "#{z}. #{x.artist.name} - #{x.name} - #{x.genre.name}" 
  end
- end
+end
+ 
  def list_artists
    Artist.all.sort_by(&:name).each.with_index(1) do |x,z|
-     
      puts "#{z}. #{x.name}"
    end
-   end 
+ end 
+  
   def list_genres
       Genre.all.sort_by(&:name).each.with_index(1) do |x,z| 
        puts "#{z}. #{x.name}"
@@ -49,8 +50,6 @@ end
      #artist.songs.sort_by(&:name).each.with_index(1) do |z,x|
      binding.pry 
       puts "#{x}. #{song.name} - #{song.genre.name}"
-
- 
   end 
 end
 
