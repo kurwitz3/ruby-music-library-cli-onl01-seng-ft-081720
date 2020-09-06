@@ -37,14 +37,16 @@ end
    end 
   def list_genres
       Genre.all.sort_by(&:name).each.with_index(1) do |x,z| 
-      
        puts "#{z}. #{x.name}"
     end
  end 
+ 
  def list_songs_by_artist
    puts "Please enter the name of an artist:"
      x = gets.chomp
+    
     if  artist = Artist.find_by_name(x)
+      binding.pry 
       artist.songs.sort_by(&:name).each.with_index do |z,x|
       puts "#{x}. #{song.name} - #{song.genre.name}"
 
