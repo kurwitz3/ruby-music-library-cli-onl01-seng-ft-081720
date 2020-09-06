@@ -43,11 +43,14 @@ end
  end 
  def list_songs_by_artist
    puts "Please enter the name of an artist:"
-   artist = gets.chomp
-    if Artist.find_by_name(artist)
+     x = gets.chomp
+    if  artist = Artist.find_by_name(x)
+      artist.songs.sort_by(&:name).each.with_index so |z,x|
+  binding.pry 
 
  end
-   
+  end 
+end 
 
 
 
