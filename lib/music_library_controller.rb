@@ -46,7 +46,7 @@ end
      x = gets.chomp
     
     if  artist = Artist.find_by_name(x)
-    binding.pry 
+    
       artist.songs.sort_by(&:name).each.with_index do |z,x|
       
       puts "#{x}. #{song.name} - #{song.genre.name}"
