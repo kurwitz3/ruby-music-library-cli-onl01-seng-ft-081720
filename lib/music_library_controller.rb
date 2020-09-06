@@ -50,7 +50,7 @@ end
      binding.pry 
       puts "#{x}. #{song.name} - #{song.genre.name}"
 
- end
+ 
   end 
 end
 
