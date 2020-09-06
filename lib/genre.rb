@@ -26,9 +26,7 @@ def self.destroy_all
    end 
    
    def self.create(name)
-      genre = new(name)
-      genre.save
-      genre
+      self.new(name)
   end
   
   def artists
