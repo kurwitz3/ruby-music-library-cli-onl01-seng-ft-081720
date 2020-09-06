@@ -76,6 +76,5 @@ end
 
 
 
-self.list_songs
 
 end 
