@@ -30,7 +30,7 @@ end
  end
  end
  def list_artists
-   Artist.sort_by(&:name).each.with_index(1) do |x,z|
+   Artist.all.sort_by(&:name).each.with_index(1) do |x,z|
      
      puts "#{z}. #{x.name}"
    end
