@@ -67,7 +67,7 @@ end
 def play_song 
  puts "Which song number would you like to play?"
   song = gets.chomp.to_i
-  if list_songs.incude?(song)
+  if list_songs.include?(song)
   puts "PLaying #{number.name} by #{number.artist.name}"
 end 
 end
