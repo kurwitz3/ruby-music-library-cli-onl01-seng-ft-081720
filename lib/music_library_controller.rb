@@ -72,7 +72,6 @@ def play_song
   puts "PLaying #{number.name} by #{number.artist.name}"
 end 
 end
-end
 
 
 
