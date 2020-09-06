@@ -6,6 +6,7 @@ module Concerns::Findable
     all.find do |x|
       binding.pry 
  if x.name == name 
+   x
    end 
  end
  end
