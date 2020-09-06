@@ -54,11 +54,11 @@ end
 end
 
  def list_songs_by_genre
-   puts "Please enter the name of an artist:"
+   puts "Please enter the name of a genre:"
      x = gets.chomp
     
-    if  artist = Artist.find_by_name(x)
-     artist.songs.sort_by(&:name).each.with_index(1) do |z,x|
+    if  genre = Genre.find_by_name(x)
+     genre.songs.sort_by(&:name).each.with_index(1) do |z,x|
       
       puts "#{x}. #{z.name} - #{z.genre.name}"
   end 
