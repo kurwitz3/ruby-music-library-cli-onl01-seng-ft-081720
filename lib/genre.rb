@@ -7,7 +7,7 @@ class Genre
      @name = name 
      @songs =[]
      save
-      end 
+  end 
   
   def songs 
     @songs
@@ -15,15 +15,15 @@ class Genre
  
    def self.all 
     @@all 
-  end 
+   end 
  
 def save 
   @@all << self 
 end 
 
 def self.destroy_all 
-     @@all.clear 
-   end 
+    @@all.clear 
+end 
    
    def self.create(name)
       self.new(name)
@@ -35,9 +35,7 @@ def self.destroy_all
     if x.genre == self 
      new << x.artist
     end
-  end
- new.uniq
+   end
+  new.uniq
  end
-  
-  
- end 
+end 
