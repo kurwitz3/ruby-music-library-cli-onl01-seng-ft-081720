@@ -52,7 +52,7 @@ end
       puts "#{x}. #{z.name} - #{z.genre.name}"
   end 
 end
-
+end
  def list_songs_by_genre
    puts "Please enter the name of a genre:"
      x = gets.chomp
@@ -61,8 +61,8 @@ end
      genre.songs.sort_by(&:name).each.with_index(1) do |z,x|
       
       puts "#{x}. #{z.artist} - #{z.name}"
-  end 
-end
+   end 
+ end
 end
 
 
