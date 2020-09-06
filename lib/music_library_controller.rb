@@ -32,7 +32,7 @@ end
  def list_artists
    Song.all.sort_by(&:name.each.with_index(1) do |x,z|
     binding.pry 
-    # puts "#{z}. #{x.artist.name}"
+     puts "#{z}. #{x.artist.name}"
    end
    end 
   def list_genres
